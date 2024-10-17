@@ -1,0 +1,891 @@
+/* .Home-container{
+  background-color: #000000;
+  height: 100vh;
+} */
+/* General container styles */
+.Home-container {
+  background-color: black;
+}
+
+.gallery-containerz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  /* max-width: 1000px; */
+  margin: 4rem auto;
+  overflow: hidden;
+}
+
+.galleryz {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.galleryz img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-wrapz {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.gallery-wrapz span {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a background behind the arrows */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-wrapz span:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery img {
+      width: 200px;
+  }
+
+  .gallery-wrap span {
+      font-size: 2rem;
+      width: 3rem;
+      height: 3rem;
+  }
+}
+
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 20px;
+  background-color: #000;
+
+}
+
+
+
+
+
+.child {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.child h4,
+.pops h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0 0 10px 2%;
+}
+
+.child h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  background-image: linear-gradient(45deg, #0072ff, #02d982);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.child p,
+.pops p {
+  font-size: 18px;
+  color: #666;
+  margin: 0 10% 30px 0;
+  line-height: 1.6;
+}
+
+.child button {
+  background: linear-gradient(45deg, #0072ff, #02d982);
+  color: white;
+  padding: 1.1rem 3em;
+  border: none;
+  border-radius: 3rem;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.child button:hover {
+  background-color: #e64a19;
+}
+
+.parent img {
+  max-width: 40%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+/* Calendar and pops styles */
+.cal {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.cal h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 10px;
+  color: transparent;
+  text-align: center;
+  background-image: linear-gradient(45deg, #0072ff, #02d982);
+  -webkit-background-clip: text;
+}
+
+.arraxs {
+  gap: 1rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.pops {
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.pops p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.pops h4 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Gallery styles */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #000;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.gallery-wrap {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.gallery-wrap img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-wrap img:hover {
+  transform: scale(1.1);
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+
+.gallery div {
+  display: flex;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery::-webkit-scrollbar,
+.gallery {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Boss section styles */
+.boss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.image-top,
+.image-bottom {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-top {
+  top: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.image-bottom {
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.boss img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+/* Tae and Sang section */
+.tae,
+.taes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #000;
+  height: 35rem;
+}
+
+.tae img,
+.taes img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.taes {
+  flex-direction: row-reverse;
+}
+
+.Sang,
+.Sangs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 4rem;
+}
+
+.Sang h3,
+.Sangs h4 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.Sang h3 span {
+  background-image: linear-gradient(45deg, #0072ff, #02d982);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.spans {
+  background-image: linear-gradient(45deg, #0072ff, #02d982);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Sang p,
+.Sangs p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Sang p img,
+.Sangs p img {
+  width: 10%;
+  height: auto;
+}
+
+
+/* Main Container for Specifications */
+.cost {
+  padding: 20px;
+  background-color: #000;
+  /* Optional: margin-bottom: 20px; */
+}
+
+/* Gradient Text for Heading */
+.cost h6 {
+  font-size: 2.5rem;
+  background-image: linear-gradient(45deg, #0072ff, #02d982);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.Acess {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #000;
+  /* max-height: 80vh; */
+
+}
+
+/* Sub-sections within Specifications */
+.Saboss {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.Luffyss {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Columns for Engine, Dimension, etc. */
+.colss {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #000;
+}
+
+/* Subsection Titles */
+.ttless {
+  font-size: 1.5rem;
+  color: #0015ff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Info Section Box */
+.hoho {
+  background-color: #000;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+
+.hoho h6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 19px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.3rem;
+  margin: 0;
+
+}
+
+
+.hoho h6 p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-left: 10px;
+  text-align: end;
+}
+
+
+.footerxz {
+  /* background-color: #0a0a5f; */
+  background-color: #67615F;
+  color: #fff;
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+.footerxz .Acesz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerxz .Sabosz {
+  width: 100%;
+}
+
+.footerxz .Luffysz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerxz .colsz {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footerxz .colsz h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f39c12;
+  padding-bottom: 5px;
+}
+
+.footerxz .colsz a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s, transform 0.3s;
+  padding: 4px 0rem;
+}
+
+.footerxz .colsz a:hover {
+  color: #f39c12;
+  transform: scale(1.05);
+}
+
+.footerxz .ninesz {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footerxz .ninesz h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footerxz .iconsz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerxz .iconsz span {
+  margin: 0 10px;
+}
+
+.footerxz .iconsz a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footerxz .iconsz a:hover {
+  color: #f39c12;
+  animation: scale 0.5s infinite alternate;
+}
+
+.Copyright {
+
+  text-align: center;
+  padding: 20px;
+  /* background-color: #4f3f3f; Dark background for contrast */
+  background: linear-gradient(#8693AB, #BDD4E7);
+  color: #fff;
+  /* White text for readability */
+  font-family: Arial, sans-serif;
+  /* margin-top: 20px; */
+  border-top: 1px solid #444;
+  /* Subtle border to separate section */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Copyright p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  /* Lighter color for the copyright text */
+  margin: 5px 0;
+}
+
+.Copyright h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #ffffff;
+  /* Lighter color for developer credit */
+  margin-top: 10px;
+  letter-spacing: 1px;
+  animation: colour 1.7s linear infinite;
+  transition: color 0.3s ease-in-out;
+}
+
+/* @keyframes colour {
+  0% {
+    background-image: linear-gradient(45deg, #ff0000, #f2ff00);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    background-image: linear-gradient(45deg, #0072ff, #02d982);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+} */
+
+
+
+
+/* @keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+} */
+
+@media (max-width: 768px) {
+  .parent {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .child {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .child h4 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .child h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .child p {
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  .child button {
+    padding: 0.8rem 2rem;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .parent img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .child h1 {
+    font-size: 2.5rem;
+  }
+
+  .pops {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .parent img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .pops {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .boss {
+    margin: 10px 0;
+
+  }
+
+  .image-top,
+  .image-bottom {
+    height: 150px;
+
+  }
+
+  img {
+    height: auto;
+
+  }
+
+  .tae {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .tae img {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+  }
+
+  .Sang {
+    padding: 1rem 2rem;
+
+  }
+
+  .Sang h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .Sang p {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .Sang p img {
+    display: none;
+  }
+
+  .taes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .taes img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Sangs {
+    padding: 1rem 2rem;
+  }
+
+  .Sangs h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .Sangs p {
+    font-size: 14px;
+    gap: 10px;
+
+  }
+
+  .Sangs p img {
+    display: none;
+  }
+
+  .footersxz .colsz {
+    margin: 10px 0;
+    flex: 1 0 100%;
+  }
+
+  .footersxz .ninesz {
+    text-align: center;
+  }
+
+  .Copyright {
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Copyright p {
+    font-size: 1rem;
+  }
+
+  .Copyright h4 {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .parent {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .child {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .child h1 {
+    font-size: 2rem;
+  }
+
+  .child h4 {
+    font-size: 18px;
+  }
+
+  .child p {
+    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .child button {
+    padding: 0.8rem 2em;
+    font-size: 14px;
+  }
+
+  .parent img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tae,
+  .taes {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .tae img,
+  .taes img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Sang,
+  .Sangs {
+    padding: 1rem;
+  }
+
+  .Sang h3,
+  .Sangs h4 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .Sang p,
+  .Sangs p {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .gallery-container {
+    padding: 1rem;
+  }
+
+  .pops {
+    width: 100%;
+    padding: 1rem;
+    margin: 5px;
+  }
+
+  .cost {
+    padding: 15px;
+  }
+
+  .cost h6 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .Acess {
+    padding: 15px;
+    max-height: auto;
+  }
+
+  .Saboss {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .Luffyss {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colss {
+    min-width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  .ttless {
+    font-size: 1.25rem;
+  }
+
+  .hoho {
+    padding: 10px;
+  }
+
+  .hoho h6 {
+    font-size: 1.1rem;
+    padding: 15px 0;
+  }
+
+  .hoho h6 p {
+    font-size: 0.9rem;
+  }
+
+
+}

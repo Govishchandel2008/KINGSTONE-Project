@@ -1,0 +1,226 @@
+.Balerion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f0f0f0; */
+    /* background-color: #1C042E; */
+    background: linear-gradient(  #ffeeee, #ddefbb);
+    flex-direction: column;
+
+}
+
+.Aegon {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    border: black solid 1px;
+    /* position: absolute; */
+}
+
+.Aegon h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Satisfy', fantasy;
+    font-size: 2rem;
+}
+
+.datat {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datat label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.datat input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin: 8px 0rem;
+}
+
+.datat input:focus {
+    border-color: #00bfff; /* Blue color on focus */
+}
+
+.Sumbiteds button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #3f7ec1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Sumbiteds button:hover {
+    background-color: #0056b3;
+    transition: .3s;
+}
+
+.Aegon h3 {
+    font-size: 18px;
+    color: #666;
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+}
+
+.Aegon h3::before,
+.Aegon h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.Aegon h3::before {
+    left: 0;
+}
+
+.Aegon h3::after {
+    right: 0;
+}
+.face-books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem 0rem;
+}
+
+.face-books i{
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem;
+}
+.face-books a {
+    text-decoration: none; 
+}
+
+.face-books a h4{
+    font-size: 1.1rem;
+}
+
+
+.Forget {
+    text-align: center;
+    margin-top: 11px;
+}
+
+.dede {
+    font-size: 15px;
+    color: #4e5964;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dede:hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+
+.Signup-box {
+
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: black solid 1px; 
+    
+}
+
+.Signup-box h5 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.Signup-box a {
+    font-size: 16px;
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Signup-box a:hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .Balerion {
+        padding: 20px;
+        /* height: auto; */
+    }
+
+    .Aegon {
+        max-width: 90%; 
+        padding: 15px;
+        /* position: relative; */
+    }
+
+    .Aegon h2 {
+        font-size: 20px; 
+    }
+
+    .datat input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .Aegon h3 {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .face-books i {
+        font-size: 1.1rem; 
+    }
+
+    .face-books a h4 {
+        font-size: 1rem; 
+    }
+
+
+    .dede {
+        font-size: 14px;
+    }
+
+    .Signup-box {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .Signup-box h5 {
+        font-size: 14px;
+    }
+
+    .Signup-box a {
+        font-size: 14px;
+    }
+
+}

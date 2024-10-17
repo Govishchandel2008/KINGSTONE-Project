@@ -1,0 +1,120 @@
+.Balerions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: #f5f5f5; */
+  background: linear-gradient(#ffeeee, #ddefbb);
+  font-family: Arial, sans-serif;
+}
+
+.Aegons {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.Aegons h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: 'Satisfy', fantasy;
+}
+
+.Aegons p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.face-bookss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.face-bookss i {
+  font-size: 1.5rem;
+  color: #4267B2;
+}
+
+.face-bookss h4 {
+  color: #4267B2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Aegons h3 {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  color: #999;
+}
+
+.Aegons h3::before {
+  left: 0;
+}
+
+.Aegons h3::after {
+  right: 0;
+}
+
+.datats {
+  margin-bottom: 1rem;
+}
+
+.datats input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.nop,
+.nops {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 1rem 0;
+}
+
+.Sumbitedss button {
+  background-color: #0095f6;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Sumbitedss button:hover {
+  background-color: #007bb5;
+}
+
+.Signup-boxs {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Signup-boxs h5 {
+  font-size: 1rem;
+  color: #666;
+}
+
+.Signup-boxs a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Signup-boxs a:hover {
+  text-decoration: underline;
+}

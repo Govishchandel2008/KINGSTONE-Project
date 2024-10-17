@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testing.css">
+</head>
+
+<body>
+    <div class="loading-spinner"></div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useEffect } from 'react';
+import './Home.css';
+
+
+
+import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
+
+const Home = () => {
+// useEffect(() => {
+// const scrollElements = document.querySelectorAll('.scroll-animation');
+
+// const elementInView = (el, dividend = 1) => {
+// const elementTop = el.getBoundingClientRect().top;
+// return (
+// elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend // ); // }; // const
+    displayScrollElement=(element)=> {
+    // element.classList.add('scroll-animation-visible');
+    // };
+
+    // const handleScrollAnimation = () => {
+    // scrollElements.forEach((el) => {
+    // if (elementInView(el, 1.25)) {
+    // displayScrollElement(el);
+    // }
+    // });
+    // };
+
+    // window.addEventListener('scroll', handleScrollAnimation);
+
+
+    // handleScrollAnimation();
+
+    // return () => {
+    // window.removeEventListener('scroll', handleScrollAnimation);
+    // };
+    // }, []);
+
+    return (
+    <div className="main">
+
+
+
+        {/* <div className='home'>
+            <div className="image">
+                <img src="src/assets/skull-with-swords.jpg" alt="" />
+                <h2 datatype='Car Dealer and Experience'> </h2>
+                <h3>A car is a vehicle that has wheels, carries a small number <br /> of passengers, and is moved by an
+                    engine or a motor.</h3>
+                <input className='button' type="submit" value=">| Explore Product" />
+            </div>
+        </div> */}
+        <div className="information ">
+            {/* <h4>Engine</h4> */}
+            {/* <div className="Engine">
+                <div className="first">
+                    <img src="src/assets/kooggggg.jpg" alt="" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores porro, eius
+                        praesentium dolor ipsam labore quidem recusandae ea accusantium temporibus iure blanditiis eos
+                        in adipisci, obcaecati corrupti sapiente totam accusamus. Tenetur vel a perspiciatis dicta
+                        debitis praesentium animi nostrum.</p>
+                </div>
+            </div>
+            <div className="Engine scroll-animation">
+                <div className="first">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores porro, eius
+                        praesentium dolor ipsam labore quidem recusandae ea accusantium temporibus iure blanditiis eos
+                        in adipisci, obcaecati corrupti sapiente totam accusamus. Tenetur vel a perspiciatis dicta
+                        debitis praesentium animi nostrum.</p>
+                    <img src="src/assets/carengine3.jpg" alt="" />
+                </div>
+            </div>
+
+            <div className="Engine3 scroll-animation">
+                <div className="first">
+                    <img src="src/assets/engine6.jpg" alt="" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores porro, eius
+                        praesentium dolor ipsam labore quidem recusandae ea accusantium temporibus iure blanditiis eos
+                        in adipisci, obcaecati corrupti sapiente totam accusamus. Tenetur vel a perspiciatis dicta
+                        debitis praesentium animi nostrum.</p>
+                </div>
+            </div>
+            <div className="Engine4 scroll-animation">
+                <div className="first">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores porro, eius
+                        praesentium dolor ipsam labore quidem recusandae ea accusantium temporibus iure blanditiis eos
+                        in adipisci, obcaecati corrupti sapiente totam accusamus. Tenetur vel a perspiciatis dicta
+                        debitis praesentium animi nostrum.</p>
+                    <img src="src/assets/engine7.jpg" alt="" />
+                </div>
+            </div> */}
+
+
+
+
+            <div className='banner '>
+                <h5>TXT CARS</h5>
+                <div className="slider-3d" style={{ "--quantity" : "9" , "--time" : "9s" }}>
+                    <div className='card-slider' style={{ "--i" : 1 }}><img src="src/assets/car1.jpg" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 2 }}><img src="src/assets/car2.jpg" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 3 }}><img src="src/assets/car3.webp" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 4 }}><img src="src/assets/car4.jpg" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 5 }}><img src="src/assets/car5.webp" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 6 }}><img src="src/assets/car6.jpg" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 7 }}><img src="src/assets/car7.jpg" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 8 }}><img src="src/assets/car8.jpg" alt="" /></div>
+                    <div className='card-slider' style={{ "--i" : 9 }}><img src="src/assets/car9.jpg" alt="" /></div>
+                </div>
+            </div>
+        </div>
+        {/* <div className='van scroll-animation'>
+            <h5>TXT RAFA COMPANY </h5>
+            <h6>HAPPY HOILDAY @TXT RAFA</h6>
+            <p>Car moments and memories are what happy MODIFLY are made of! Travel makes you explore and experience new
+                things, and helps you embark on the journey of self-discovery. So get ready to reward yourself. Allow us
+                to be your gracious host. We promise you unforgettable holidays and memorable experiences.</p>
+            <div className="container">
+                <div className="container-first">
+                    <img src="src/assets/audi-logoooo.jpg" alt="errr" />
+                    <img src="src/assets/Rolls logo.jpg" alt="errr" />
+                    <img src="src/assets/Bmw logo.jpg" alt="errr" />
+                    <img src="src/assets/Mercedes logo.jpg" alt="errr" />
+                </div>
+                <div className="container-second">
+                    <img src="src/assets/toyota-logo.jpg" alt="errr" />
+                    <img src="src/assets/car logo.jpg" alt="errr" />
+                    <img src="src/assets/hyunai logo.png" alt="errr" />
+                    <img src="src/assets/new tata logo.jpg" alt="errr" />
+                </div>
+            </div>
+            <h4>Newsletter</h4>
+            <p>Stay up to date with the latest news from the world of TXT☠RAFA.</p>
+            <div className='bin'>
+                <button>SUBSCRIBE</button>
+            </div>
+        </div> */}
+        <footer>
+            <div className="Aces scroll-animation">
+                <div className="Sabos">
+                    <div className="Luffys">
+                        <div className="cols">
+                            <h2 className='ttles'>Racing</h2>
+                            <a href="">Ferrari Driver Academy</a>
+                            <a href="">Scuderia Ferrari HP</a>
+                            <a href="">Carlos Sainz</a>
+                            <a href="">Charles Leclerc</a>
+                            <a href="">Hypercar</a>
+                            <a href="">Esports</a>
+                            <a href="">Gtx</a>
+                        </div>
+                        <div className="cols">
+                            <h2 className='ttles'>Sports Cars</h2>
+                            <a href="">Configure your Ferrari</a>
+                            <a href="">Recall information</a>
+                            <a href="">MyFerrari</a>
+                            <a href="">Pre-owned</a>
+                            <a href="">TechInfo</a>
+                            <a href="">Dealers</a>
+                            <a href="">Range</a>
+                        </div>
+                        <div className="cols">
+                            <h2 className='ttles'>Experiences</h2>
+                            <a href="">Ferrari World Abu Dhabi</a>
+                            <a href="">Ferrari Land Barcelona</a>
+                            <a href="">Ferrari Esports Series</a>
+                            <a href="">Ristorante Cavallino</a>
+                            <a href="">Ferrari Museums</a>
+                            <a href="">Corse Clienti</a>
+                            <a href="">Quality</a>
+                        </div>
+                        <div className="cols">
+                            <h2 className='ttles'>NEWSROOM</h2>
+                            <a href="">Thought leadership</a>
+                            <a href="">Press releases</a>
+                            <a href="">Media library</a>
+                            <a href="">Overview</a>
+                        </div>
+                        <div className="cols">
+                            <h2 className='ttles'>CAREERS</h2>
+                            <a href="">Openings @ TXT☠RAFA</a>
+                            <a href="">Life @ TXT☠RAFA</a>
+                            <a href="">Overview</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="nines ">
+                    <h2>SOCIAL MEDIA</h2>
+                    <div className="icons">
+                        <span><a href="https://linkedin.com"><i className="fa-brands fa-linkedin"></i></a></span>
+                        <span><a href="https://facebook.com"><i className="fa-brands fa-facebook"></i></a></span>
+                        <span><a href="https://instagram.com" target="_blank"><i
+                                    className="fa-brands fa-instagram"></i></a></span>
+                        <span><a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a></span>
+                        <span><a href="https://google.com"><i className="fa-brands fa-google"></i></a></span>
+                        <span><a href="https://telegram.com"><i className="fa-brands fa-telegram"></i></a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    );
+    }
+
+    export default Home;
+
+    <div className='banner '>
+        <div className="slider-3d" style={{ "--quantity" : "6" , "--time" : "6s" }}>
+            <div className='card-slider' style={{ "--i" : 1 }}><img src="src\assets\z1.jpg" alt="" /></div>
+            <div className='card-slider' style={{ "--i" : 2 }}><img src="src\assets\z2.jpg" alt="" /></div>
+            <div className='card-slider' style={{ "--i" : 3 }}><img src="src\assets\z3.jpg" alt="" /></div>
+            <div className='card-slider' style={{ "--i" : 4 }}><img src="src\assets\z4.jpg" alt="" /></div>
+            <div className='card-slider' style={{ "--i" : 5 }}><img src="src\assets\z5.jpg" alt="" /></div>
+            <div className='card-slider' style={{ "--i" : 6 }}><img src="src\assets\z6.jpg" alt="" /></div>
+        </div>
+    </div>
+
+
+
+    .boss {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .image-top, .image-bottom {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    img {
+    display: block;
+    width: 100%;
+    max-width: 500px; /* Set a maximum width for the image */
+    margin: 10px auto; /* Center the image horizontally */
+    border-radius: 10px; /* Optional: add rounded corners */
+    }
+
+
+    .image-bottom {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
+
+
+
+
+    .boss {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .image-top, .image-bottom {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .image-top {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    .image-bottom {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    border-radius: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div className="Acess">
+        <div className="Saboss">
+            <div className="Luffyss">
+                <div className="colss">
+                    <h2 className='ttless'>Racing</h2>
+                    <a href="">Ferrari Driver Academy</a>
+                    <a href="">Scuderia Ferrari HP</a>
+                    <a href="">Carlos Sainz</a>
+                    <a href="">Charles Leclerc</a>
+                    <a href="">Hypercar</a>
+                    <a href="">Esports</a>
+                    <a href="">Gtx</a>
+                </div>
+                <div className="colss">
+                    <h2 className='ttless'>Sports Cars</h2>
+                    <a href="">Configure your Ferrari</a>
+                    <a href="">Recall information</a>
+                    <a href="">MyFerrari</a>
+                    <a href="">Pre-owned</a>
+                    <a href="">TechInfo</a>
+                    <a href="">Dealers</a>
+                    <a href="">Range</a>
+                </div>
+                <div className="colss">
+                    <h2 className='ttless'>Experiences</h2>
+                    <a href="">Ferrari World Abu Dhabi</a>
+                    <a href="">Ferrari Land Barcelona</a>
+                    <a href="">Ferrari Esports Series</a>
+                    <a href="">Ristorante Cavallino</a>
+                    <a href="">Ferrari Museums</a>
+                    <a href="">Corse Clienti</a>
+                    <a href="">Quality</a>
+                </div>
+                <div className="colss">
+                    <h2 className='ttless'>NEWSROOM</h2>
+                    <a href="">Thought leadership</a>
+                    <a href="">Press releases</a>
+                    <a href="">Media library</a>
+                    <a href="">Overview</a>
+                </div>
+                <div className="colss">
+                    <h2 className='ttless'>CAREERS</h2>
+                    <a href="">Openings @ TXT☠RAFA</a>
+                    <a href="">Life @ TXT☠RAFA</a>
+                    <a href="">Overview</a>
+                    <a href="">FAQs</a>
+                </div>
+            </div>
+        </div>
